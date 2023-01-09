@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    layout_width="match parent"
+    layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash"
+    android:orientation="vertical"
+    android:background="#a6f4ed">
+
+    <ImageView
+        android:layout_width="243dp"
+        android:layout_height="306dp"
+        android:src="@drawable/splash"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-40dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="Workouts"
+        android:textColor="#042D62"
+        android:textSize="70dp">
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="Never skip it."
+        android:textColor="#535666"
+        android:textSize="20dp">
+    </TextView>
+</androidx.appcompat.widget.LinearLayoutCompat>
