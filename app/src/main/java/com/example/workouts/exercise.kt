@@ -10,6 +10,9 @@ class exercise : AppCompatActivity() {
     private var restTimer: CountDownTimer? = null // Variable for Rest Timer and later on we will initialize it.
     private var restProgress = 0
     private var binding: ActivityExerciseBinding? = null
+
+    private var exerciseList : ArrayList<ExerciseModel>? = null
+    private var currentExercisePosition=-1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -20,6 +23,8 @@ class exercise : AppCompatActivity() {
         supportActionBar?.hide()
 
         setupRestView()
+
+        exerciseList=Constants.defaultExerciseList()
     }
 
     private fun setupRestView() {
@@ -43,6 +48,7 @@ class exercise : AppCompatActivity() {
             }
 
             override fun onFinish() {
+                currentExercisePosition++
                 Toast.makeText(
                     this@exercise,
                     "Here now we will start the exercise.",
